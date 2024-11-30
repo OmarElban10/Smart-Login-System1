@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART LOGIN SYSTEM</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+  
+    
+      <!-- Registration Page -->
+      <div class="container" id="registerPage">
+        
+        <div class="form-container">
+          <div class="form-box">
+            <h1 class="text-black">SMART LOGIN SYSTEM</h1>
+            <input type="text" id="registerName" placeholder="Enter your name" class="rounded-4">
+            <input type="email" id="registerEmail" placeholder="Enter your email" class="rounded-4">
+            <input type="password" id="registerPassword" placeholder="Enter password" class="rounded-4">
+            <button onclick="registerUser()">Sign Up</button>
+            <p>Already have an account? <a href="#" onclick="showLoginPage()">Sign In</a></p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Login Page -->
+      <div class="container" id="loginPage" style="display: none;">
+        <div class="form-container">
+          <div class="form-box">     
+            <h1 class="text-black ">SMART LOGIN SYSTEM</h1>
+            <input type="email" id="loginEmail" placeholder="Enter your email" class="rounded-4">
+            <input type="password" id="loginPassword" placeholder="Enter password" class="rounded-4">
+            <button onclick="loginUser()">Log In</button>
+            <p>Don't have an account? <a href="#" onclick="showRegisterPage()">Sign Up</a></p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Home Page -->
+
+
+      <nav class="navbar navbar-expand-lg sticky-top " id="navbar" style="display: none;">
+        <div class="container-fluid sticky-top">
+          <p class="navbar-brand text-bold text-white " >SMART LOGIN</p>
+
+              <button class="btn btn-outline-success " type="submit"  onclick="logoutUser()" id="LOGOUT" class="rounded-4">LOG OUT</button>
+            </form>
+          </div>
+      </nav>
+      <div class="container" id="homePage" style="display: none;">
+        <div class="form-container">
+          <div class="welcome-box">
+            <h2 class="text-black">Welcome <span id="userName"></span></h2>
+          </div>
+        </div>
+      </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
